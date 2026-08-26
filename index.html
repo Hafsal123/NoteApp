@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Note App</title>
+</head>
+<body>
+
+    
+
+    <nav>
+        <div class="navbar">
+            <h1 class="heading">Notes</h1>
+            <input type="search" name="search" id="search" placeholder="   Search">
+            <button class="plusBtn" id="plusBtn"><strong>+</strong> Add Note</button>
+
+        </div>
+
+    </nav>
+
+    <dialog id="myNote" >
+
+            <h3>Heading</h3>
+            <input type="text" name="heading" id="noteHeading">
+            <h3>Content</h3>
+            <textarea name="text" id="noteText"></textarea>
+
+            <div class="buttonGroup">
+                <button type="button" onclick="closeNote()" id="cancelBtn">Cancel</button>
+                <button type="button" id="saveBtn">Save</button>
+            </div>
+            
+    </dialog>
+
+   
+    
+
+    <main>
+          
+        <div class="container">
+            
+            
+        </div>
+    </main>
+
+    <div id="editPanel" class="editPanel">
+
+        <div class="editContent">
+
+            <input type="text" name="text" id="inputHeading">
+            <textarea name="" id="edit-text" rows="10"></textarea>
+            <button type="button" class="cancelBtn" id="Canceledit" onclick="canceledit()">Cancel</button>
+            <button type="button" class="update-button" id="updateBtn">Save Changes</button>
+            
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
